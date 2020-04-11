@@ -1,6 +1,6 @@
 🚀 [Sobre o desafio](README_ABOUT.md)
 
-### ⚙️ Rodando o projeto
+### ⚙️ Rodando o desafio
 
 Basta executar `yarn && yarn dev` para instalar as dependências e iniciar o projeto.
 
