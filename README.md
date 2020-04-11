@@ -4,9 +4,13 @@
 
 Basta executar `yarn && yarn dev` para instalar as dependências e iniciar o projeto.
 
+![yarn](https://user-images.githubusercontent.com/28319535/79054700-74946700-7c1d-11ea-89aa-4323419b0887.png)
+
 ### 🔬 Testes
 
 Basta executar `yarn test` para rodar os testes.
+
+![jest](https://user-images.githubusercontent.com/28319535/79054687-4c0c6d00-7c1d-11ea-882d-125d0e76d4c7.png)
 
 ### 📌 Tarefas do Desafio 02 - Conceitos do Node.js
 
