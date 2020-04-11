@@ -30,16 +30,6 @@ function validateRepositoryID(request, response, next) {
   return next();
 }
 
-function validateProjectData(request, response, next) {
-  const { title, url, techs } = request.body;
-
-  if (!title || !url || !techs.length) {
-    return response.status(400).json({ error: "All fields are required." });
-  }
-
-  return next();
-}
-
 app.use(logger);
 app.use("/repositories/:id", validateRepositoryID);
 
@@ -47,7 +37,7 @@ app.get("/repositories", (request, response) => {
   return response.json(repositories);
 });
 
-app.post("/repositories", validateProjectData, (request, response) => {
+app.post("/repositories", (request, response) => {
   const { title, url, techs } = request.body;
 
   const newProject = {
@@ -63,7 +53,7 @@ app.post("/repositories", validateProjectData, (request, response) => {
   return response.json(newProject);
 });
 
-app.put("/repositories/:id", validateProjectData, (request, response) => {
+app.put("/repositories/:id", (request, response) => {
   const { id } = request.params;
   const { title, url, techs } = request.body;
 
